@@ -11,10 +11,10 @@ source ~/.bash_profile
 dotfiles config --local status.showUntrackedFiles no
 ```
 
-Then checkout the dotfiles you want e.g. 
+Then checkout everything with
 
 ```bash
-dotfiles checkout .vimrc
+dotfiles checkout
 ```
 
 # References
