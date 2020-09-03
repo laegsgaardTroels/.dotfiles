@@ -19,4 +19,5 @@ dotfiles checkout .vimrc
 
 # References
 
-  [1] https://github.com/fwuensche/dotfiles
+    [1] https://github.com/fwuensche/dotfiles
+    [2] https://github.com/amix/vimrc
