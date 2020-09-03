@@ -10,4 +10,5 @@ echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 
 References:
+
   [1] https://github.com/fwuensche/dotfiles
