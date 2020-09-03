@@ -11,7 +11,7 @@ source ~/.bash_profile
 dotfiles config --local status.showUntrackedFiles no
 ```
 
-Then checkout everything with
+Then checkout 
 
 ```bash
 dotfiles checkout
