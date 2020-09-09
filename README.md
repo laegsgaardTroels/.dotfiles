@@ -20,6 +20,6 @@ dotfiles checkout
 
 # References
 
-[1] https://github.com/fwuensche/dotfiles
-[2] https://github.com/amix/vimrc
-[3] https://github.com/ohmyzsh/ohmyzsh
+    [1] https://github.com/fwuensche/dotfiles
+    [2] https://github.com/amix/vimrc
+    [3] https://github.com/ohmyzsh/ohmyzsh
