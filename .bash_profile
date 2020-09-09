@@ -22,5 +22,8 @@ function git_current_branch() {
 #################################################################################
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 alias ggpull='git pull origin "$(git_current_branch)"'
 alias ggpush='git push origin "$(git_current_branch)"'
+
+alias gg='cd ~/git'
