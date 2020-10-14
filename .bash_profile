@@ -1,29 +1,11 @@
-#################################################################################
-# FUNCTIONS                                                                     #
-#################################################################################
+#!/bin/bash
 
-# Outputs the name of the current branch
-# Usage example: git pull origin $(git_current_branch)
-# Using '--quiet' with 'symbolic-ref' will not cause a fatal error (128) if
-# it's not a symbolic ref, but in a Git repo.
-function git_current_branch() {
-  local ref
-  ref=$(__git_prompt_git symbolic-ref --quiet HEAD 2> /dev/null)
-  local ret=$?
-  if [[ $ret != 0 ]]; then
-    [[ $ret == 128 ]] && return  # no git repo.
-    ref=$(__git_prompt_git rev-parse --short HEAD 2> /dev/null) || return
-  fi
-  echo ${ref#refs/heads/}
-}
+# get my PATH setup
+if [ -f $HOME/.profile ]; then
+    source $HOME/.profile
+fi
 
-#################################################################################
-# ALIASES                                                                       #
-#################################################################################
-
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-alias ggpull='git pull origin "$(git_current_branch)"'
-alias ggpush='git push origin "$(git_current_branch)"'
-
-alias gg='cd ~/git'
+# get my Bash aliases and functions
+if [ -f $HOME/.bashrc ]; then
+    source $HOME/.bashrc
+fi
