@@ -1,4 +1,5 @@
 #!/bin/bash
+# Run upon once upon login.
 
 # get my PATH setup
 if [ -f $HOME/.profile ]; then
